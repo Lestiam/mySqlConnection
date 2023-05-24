@@ -14,11 +14,11 @@ public class main {
             Class.forName(driverName);
 
             //Create a connection to the database
-            String serverName = "localhost";
+            String serverName = "http://localhost/phpmyadmin/";
             String mydatabase = "bd_rh";
             String url = "jdbc:mysql://" + serverName + "/" + mydatabase;
             String username = "username";
-            String password = "password";
+            String password = "your_password";
             connection = DriverManager.getConnection(url, username, password);
         } catch (ClassNotFoundException e) {
             //Could not find the database driver
